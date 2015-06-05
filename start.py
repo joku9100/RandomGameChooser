@@ -1,10 +1,20 @@
-hello = "hi"
-gameinput = raw_data("Input games here" )
+import random
+
+
+def randomizegame():
+    amount_games = len(list_games)
+    print (list_games[random.randrange(0,amount_games,1)])
+
+
+gameinput = input("Input game here: " )
 list_games = [];
-append.list_games(gameinput)
+list_games.append(gameinput)
 while gameinput != "0":
-    gameinput = raw_data("Input additional games.  Type 0 to exit")
-    append.list_games(gameinput)
-    print 'hello'
-    
-    
+    print("Enter 0 to exit")
+    gameinput = input("Input additional games")
+    list_games.append(gameinput)
+
+
+randomizegame()
+
+
