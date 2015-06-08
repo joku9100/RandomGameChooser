@@ -10,7 +10,7 @@ def randomizegame():
 if not os.path.isfile('gamedata.txt'):
     open('gamedata.txt','w')
 
-
+print("what's up")
 list_games = []
 f = open('gamedata.txt','rb')
 while 1:
